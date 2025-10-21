@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    iamge: nginx:apline
+    ports:
+  database:
+    image:postgres:13
+    environment:
+      POSTGRES_PASSWORD: mypass123
+      POSTGRES_DB: gamedb
